@@ -100,7 +100,7 @@ Each semester, 6 independent sections are held on Monday, Wednesday, and Friday 
 
 \subsubsection{Scripting}
 
-I have arranged it such that most of the script for each class can be essentially read off the slides. You can also reference the teaching notes for more details.
+I have designed it such that most of the script for each class can be essentially read off the slides. You can also reference the teaching notes for more details.
 
 
 \subsubsection{Technical details}
@@ -350,6 +350,7 @@ Extra credit Moon photo project (10)
 
 \newpage
 \section{Labs}
+
 %\subsection{Lab 0: this only exists to please my ocd ass}
 
 \subsection{Lab 1: Astronomical Angles and Stellarium}
@@ -387,70 +388,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide1.jpeg}\\
-Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide3.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
+
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
 Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
 
 textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
 
-Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide5.jpeg}\\
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
 If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
 
-Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide7.jpeg}\\
-Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide8.jpeg}\\
- & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide9.jpeg}\\
-\label{default}
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-
-\noindent
-Class:
-\begin{enumerate}
-\item Angles
-	\begin{enumerate}[a.]
-	\item Measuring things on the sky is all about angles-the angle above the horizon, the angle between objects, our angular position on Earth, etc.
-		\begin{enumerate}[i.]
-		\item How many degrees are there in a circle? 
-		\item How many degrees in a right angle? 
-		\item How wide is your finger at arm's length? 
-		\end{enumerate}
-	\item Think about: what is the angular width of your camera?
-	\item Positions on Earth are measured using \emph{latitude} and \emph{longitude}. They are \emph{angles} measured from the centre of the Earth.
-	\item Positions around an observer, e.g. you, are measured using \emph{azimuth} and \emph{altitude}, which are measured similarly to longitude and latitude respectively.
-	\item Positions in the sky that will be consistent over all positions on Earth are measured in \emph{declination} (dec) and \emph{right ascension} (RA), in a similar system to latitude and longitude respectively.
-	\item Angles are commonly measured in degrees. For smaller angles, we use minutes, or arcminutes. There are 60 arcminutes in a degree. 
-
-For even smaller angles, we use seconds, or arcseconds. There are 60 arcseconds in an arcminute. There are 3600 arcseconds in a degree. 
-	\item Right ascension is measured in hours-minutes-seconds. There are 24 hours in a circle of 360. 
-	\end{enumerate}
-\item Stellarium
-	\begin{enumerate}[a.]
-	\item Intro
-		\begin{enumerate}[i.]
-		\item Download from \url{http://stellarium.org/}.
-		\item Choose your operating system. If you can't find your OS, use Stellarium Web. Install as specified.
-		\item Open location window and enter your location.
-		\item Play around!
-		\end{enumerate}
-	\item Activity
-		\begin{enumerate}[i.]
-		\item Form groups of 2-3. Open Stellarium.
-		\item Click on an object to get information about it.
-		\item Follow the instructions on the worksheet and complete it.
-		\end{enumerate}
-	\end{enumerate}
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item (At around 10 mins from end of class, display quiz password.)
-\item Use the password to access the Moodle lab quiz.
-\end{enumerate}
-% need to explain sexagesimal system because ra
 
 
 \subsubsection{Submissions}
@@ -710,30 +684,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab02/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Submissions}
@@ -836,30 +823,44 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab03/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
 
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 \subsubsection{Submissions}
 
@@ -1000,28 +1001,43 @@ Students:
 
 Before the end of class, set the Moodle Lab Quiz access password.
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab04/Slide1.jpeg}\\
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\label{default}
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
+
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 %for instructors' table moon, some kind of tripod setup would be better
 %need to clearly distinguish earth motion and moon motion
 
@@ -1153,30 +1169,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab05/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 % the flow of this is so bad. need to smoothen flow. make each step have as little stellarium overhead as possible.
 
 
@@ -1317,30 +1346,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab06/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Submissions}
@@ -1454,30 +1496,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab07/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Submissions}
@@ -1585,30 +1640,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & %\includegraphics[width=0.5\textwidth]{ppt/lab08/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Submissions}
@@ -1684,30 +1752,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab09/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Submissions}
@@ -1824,30 +1905,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab10/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Submissions}
@@ -1974,30 +2068,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/lab11/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Submissions}
@@ -2094,30 +2201,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/proj/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Photo Policy Acknowledgement}
@@ -2228,30 +2348,43 @@ Students:
 
 \subsubsection{Script}
 
-Before the end of class, set the Moodle Lab Quiz access password.
+%\newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
-\begin{longtable}{m{0.5\textwidth}m{0.5\textwidth}}
-Pick up copies of lab worksheet. & \includegraphics[width=0.5\textwidth]{ppt/proj_moon/Slide1.jpeg}\\
+\emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
-\label{default}
+\begin{longtable}{|m{0.5\textwidth}|m{0.5\textwidth}|}\hline
+Pick up copies of lab worksheet, syllabus, and Stellarium guide. & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
+Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.) & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
+Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
+
+textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
+
+Lab usually improves your overall grade, if you put in the small time and effort commitment needed. & \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
+
+Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
+Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
+If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+
+Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
+
+Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
+
+Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
+In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
+From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
+To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
+Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
+
+Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
+Fill out your worksheet. & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
+%\emph{At ~10 min from class end, show Moodle quiz password.} 
+
+%Complete the Lab quiz on Moodle.
+
+Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
+%\label{default}
 \end{longtable}
-
-Prep:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Class:
-\begin{enumerate}
-\item
-\end{enumerate}
-
-\noindent
-Wrapup:
-\begin{enumerate}
-\item
-\end{enumerate}
 
 
 \subsubsection{Submissions}
