@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+%\usepackage{nopageno}
+\usepackage{subfiles}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry} 
+\usepackage[UKenglish]{isodate}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{longtable}
+%\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\setlistdepth{9}
+\newlist{longenum}{enumerate}{6}
+\setlist[longenum,1]{label=\arabic*.}
+\setlist[longenum,2]{label=\alph*.}
+\setlist[longenum,3]{label=\roman*.}
+\setlist[longenum,4]{label=\arabic*.}
+\setlist[longenum,5]{label=\alph*.}
+\setlist[longenum,6]{label=\roman*.}
+%\setlist[longenum,7]{label=\arabic*.}
+\usepackage[separate-uncertainty=true]{siunitx}
+\sisetup{range-phrase=--}
+\usepackage{mhchem}
+\usepackage{hyperref}
+\usepackage{mathpazo}
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{comment}
+%\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+\usepackage{pgfplots}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\fancyfoot[LE,RO]{\thepage}
+
+\setcounter{section}{-1}
+
+\title{The Great Big Astro Lab Manual:\\Worksheet Master Document}
+\author{Yvonne Ban}
+%\date{}
+\cleanlookdateon
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\section{General}
+
+\subsection{Syllabus}
+
+\subsection{Stellarium Guide}
+%\subfile{stellarium guide.tex}
+\newpage
+
+\section{Lab 1: Astronomical Angles and Stellarium}
+\subsection{Worksheet}
+\subfile{ws01.tex}
+\newpage
+
+\section{Lab 2: Angular Sizes on the Sky}
+\subsection{Worksheet}
+%\subfile{ws02.tex}
+\newpage
+
+\section{Lab 3: Angular Size vs. Distance}
+\subsection{Worksheet}
+\subfile{ws03.tex}
+\newpage
+
+\section{Lab 4: Phases of the Moon}
+\subsection{Worksheet}
+\subfile{ws04.tex}
+\newpage
+
+\section{Lab 5: Motions of the Sun}
+\subsection{Worksheet}
+\subfile{ws05.tex}
+\newpage
+
+\section{Lab 6: Solar Power}
+\subsection{Worksheet}
+\subfile{ws06.tex}
+\newpage
+\subsection{Table worksheet}
+\newpage
+
+\section{Lab 7: Calendars, Horoscopes, and Precession}
+\subsection{Worksheet}
+%\subfile{ws07.tex}
+\newpage
+
+\section{Lab 8: Motions of the Planets in the Sky}
+\subsection{Worksheet}
+%\subfile{ws08.tex}
+\newpage
+
+\section{Lab 9: The HR Diagram}
+\subsection{Worksheet}
+\subfile{ws09.tex}
+\newpage
+\subsection{Table worksheet}
+\newpage
+
+\section{Lab 10: Distances of Stars in Space}
+\subsection{Worksheet}
+\subfile{ws10.tex}
+\newpage
+\subsection{Table worksheet}
+\newpage
+
+\section{Lab 11: Structure of the Local Group}
+\subsection{Worksheet}
+%\subfile{ws08.tex}
+
+\end{document}
