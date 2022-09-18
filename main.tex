@@ -33,6 +33,9 @@
 \pagestyle{fancy}
 %\fancyfoot[LE,RO]{\thepage}
 
+\usepackage[page]{appendix}
+\renewcommand{\appendixpagename}{Appendix: Worksheets}
+
 \setcounter{section}{-1}
 
 \title{The Great Big Astro Lab Manual}
@@ -58,25 +61,30 @@ Cow Canyon Saddle, Mt. Baldy, Los Angeles, CA, USA. Yvonne Ban, 24 Oct 2014. Mod
 
 \tableofcontents
 
-\section*{Preface}
+\section*{Preface}\label{sec:pref}
 \addcontentsline{toc}{section}{Preface}
 
 
-\section{How to use this manual}
+\section{How to use this manual}\label{sec:howto}
 
 Hello friend! Welcome to my masterwork.
 
 
-\subsection{Manual}
+\subsection{Manual}\label{sec:howto_man}
 
 
-\subsection{Worksheets and Handouts}
+\subsection{Prep and Script}\label{sec:howto_prep}
+
+I have designed it such that most of the script for each class can be essentially read off the slides. You can also reference the teaching notes for more details.
+
+\subsection{Worksheets and Handouts}\label{sec:howto_ws}
+
+\textbf{NOTE: THE WORKSHEETS IN THIS MANUAL ARE \emph{NOT} PRINT READY!!} To compile print-ready worksheets, reference the next section, \ref{sec:howto_ws}: Using \texttt{.tex} files, and use the worksheet master document, \texttt{ws.tex}.
+
+\subsection{Using \texttt{.tex} files}\label{sec:howto_tex}
 
 
-\subsection{Using tex files}
-
-
-\section{Introduction}
+\section{Introduction}\label{sec:intro}
 
 Astronomy is the study of the heavens. As such, a fundamental limitation of the subject is that we do not, in general, conduct \emph{experiments}, only \emph{observations} where we snatch jealously at the sparing scraps of information tantalisingly offered by nature. One could argue that astronomy lives at the very cutting edge of our knowledge, where the scientific exercises of hypothesis formulation and testing are most active and challenging.
 
@@ -86,42 +94,39 @@ Instead, Astronomy Lab is not so much about \emph{experiments} but more about th
 
 This manual was precipitated by the COVID-19 pandemic, which caused schools to transition to remote learning. Through adapting this course for this mode, sometimes being as remote as the other side of the Earth, and then adapting it back to in-person classes, we drew from the trials and experiences therewith to formalise a robust programme that will minimise the work needed to plan and oversee the conduction of the course.
 
-\section{Setup}
+\section{Setup}\label{sec:setup}
 
-\subsection{Course setup}
+\subsection{Course setup}\label{sec:setup_course}
 
 The Astronomy 100/1 Lab is conducted in tandem with the Astronomy 100 and(/or) 101 courses and is required to be taken simultaneously.
 
 
-\subsubsection{Schedule}
+\subsubsection{Schedule}\label{sec:setup_sched}
 
 Each semester, 6 independent sections are held on Monday, Wednesday, and Friday of every school week at 12:20-1:10pm (1220-1310) and 1:25-2:15pm (1325-1415). Generally, a lead teaching assistant (TA) and assistant TA is assigned for each section. The workload can be split up amongst the assigned TAs so that each section is covered. There may also be assistance from undergrad TAs.
 
 
-\subsubsection{Scripting}
-
-I have designed it such that most of the script for each class can be essentially read off the slides. You can also reference the teaching notes for more details.
-
-
-\subsubsection{Technical details}
+\subsubsection{Technical details}\label{sec:setup_tech}
 
 Every class is held in the Integrated Learning Center (ILC) room S220. The room consists of:
 \begin{itemize}
 \item 11 round tables at which students sit with power points (and table microphones)
-\item 3 physically secured Macbooks at each table that can be accessed with one’s NetID and have Stellarium installed
-\item 1 central instructor’s (standing) desk (“lectern") with elevated chair
+\item 3 physically secured Macbooks at each table that can be accessed with one's NetID and have Stellarium installed
+\item 1 central instructor's (standing) desk (``lectern") with elevated chair
 \item 1 lectern computer controlling lights and A/V of room
 \item Lights with 3(?) brightness settings
 \item 2 wireless microphones, one handheld, one wired clip-on
-\item 2 HDMI and VGA feeds each, “Lectern Laptop" and “Lectern Aux"
-\item Digital document projector on left side of instructor’s desk, “Document Cam"
+\item 2 HDMI and VGA feeds each, ``Lectern Laptop" and ``Lectern Aux"
+\item Digital document projector on left side of instructor's desk, ``Document Cam"
 \item Whiteboards that wrap around the room
-\item 11 eye-level screens with 2 separate feeds, “A" and “B", one located nearest each table
-\item 4 screens located above instructor’s desk, “Stadium"
+\item 11 eye-level screens with 2 separate feeds, ``A" and ``B", one located nearest each table
+\item 4 screens located above instructor's desk, ``Stadium"
 \end{itemize}
 
 
-\subsection{Materials}
+\subsection{Materials}\label{sec:setup_mat}
+
+N.B.: Vis-\`a-vis worksheets, please reference Section ~\ref{sec:howto_ws}.
 
 Every student gets an individual lab worksheet for each lab. Activities that involve teamwork at each table may have a table worksheet for each table. Copies of the syllabus and Stellarium guide may also be provided in hard copy. All materials and instructor presentations are copied on the class webpage on Moodle (Moonami, or Moodle in the Cloud).
 
@@ -130,7 +135,7 @@ All individual student submissions, including all end-of-class quizzes, are admi
 Demo materials for specific labs are listed for each lab and can be found in the class supply room.
 
 
-\subsection{Grade breakdown}
+\subsection{Grade breakdown}\label{sec:setup_grad}
 
 The total Astronomy Lab grade makes up 25\% of the overall Astronomy 100/1 course grade, and does not have a separate grade. The remaining 75\% of the Astronomy 100/1 course grade comes from lecture assignments and exams. Within Astronomy Lab, the grade assignment is broken down as shown in Table ~\ref{tab:grades}.
 
@@ -176,7 +181,7 @@ Extra credit project & Photos & 5 \\
 
 
 %\newpage
-\subsubsection{Manual grading rubrics}
+\subsubsection{Manual grading rubrics}\label{sec:setup_gradman}
 
 Sunset(/sunrise) photo project (20+2)
 \begin{longenum}
@@ -349,13 +354,13 @@ Extra credit Moon photo project (10)
 
 
 \newpage
-\section{Labs}
+\section{Labs}\label{sec:lab}
 
-%\subsection{Lab 0: this only exists to please my ocd ass}
+%\subsection{Lab 0: this only exists to please my ocd ass}\label{sec:lab_0}
 
-\subsection{Lab 1: Astronomical Angles and Stellarium}
+\subsection{Lab 1: Astronomical Angles and Stellarium}\label{sec:lab_01}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_01_over}
 
 Topics covered:
 \begin{itemize}
@@ -370,13 +375,13 @@ Watch out for:
 \item 
 \end{itemize}
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_01_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
-\item Syllabus
-\item Stellarium guide
+\item Lab worksheets: \hyperref[apx:lab_01_ws]{Appendix 1.1}
+\item Syllabus: \hyperref[apx:gen_syl]{Appendix 0.1}
+\item Stellarium guide: \hyperref[apx:gen_stel]{Appendix 0.2}
 \end{itemize}
 
 \noindent
@@ -386,7 +391,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_01_scrip}
 
 \newcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 
@@ -427,7 +432,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_01_sub}
 
 Moodle:
 \begin{enumerate}
@@ -441,7 +446,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Astronomy Background Survey}
+\subsubsection{Astronomy Background Survey}\label{sec:lab_01_surv}
 
 This survey is given before any instruction is given, and questions 1-11 are surveyed again at the end of the course.
 
@@ -609,7 +614,7 @@ Over the course of these labs you will be taking pictures of sunsets (or sunrise
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_01_qz}
 
 \begin{enumerate}
 \item%TODO: ans
@@ -648,9 +653,9 @@ How do you predict the Sun's azimuth and altitude change as it sets in the weste
 
 
 \newpage
-\subsection{Lab 2: Angular Sizes on the Sky (equiv. to Project pt. 1)}
+\subsection{Lab 2: Angular Sizes on the Sky (equiv. to Project pt. 1)}\label{sec:lab_02}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_02_over}
 
 Topics covered:
 \begin{itemize}
@@ -666,11 +671,11 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_2_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
+\item Lab worksheets: \hyperref[apx:lab_02_ws]{Appendix 2.1}
 \item Calibration grids
 \end{itemize}
 
@@ -682,7 +687,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_02_scrip}
 
 \renewcommand\slidepath[1]{ppt/lab02/Slide#1.jpeg}
 
@@ -755,7 +760,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_02_sub}
 
 Moodle:
 \begin{enumerate}
@@ -769,7 +774,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_02_qz}
 
 \begin{enumerate}
 \item
@@ -818,9 +823,9 @@ From the picture in part 3 of the lab, what were your estimates of the Sun's azi
 
 
 \newpage
-\subsection{Lab 3: Angular Size vs. Distance}
+\subsection{Lab 3: Angular Size vs. Distance}\label{sec:lab_03}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_03_over}
 
 Topics covered:
 \begin{itemize}
@@ -836,11 +841,11 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_03_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
+\item Lab worksheets: \hyperref[apx:lab_03_ws]{Appendix 3.1}
 \item Volleyball/``volleyball"
 \item Tripod/something to hold up volleyball e.g. lab stands $\times 3$
 \item Blue tape to secure
@@ -853,7 +858,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_03_script}
 
 \renewcommand\slidepath[1]{ppt/lab03/Slide#1.jpeg}
 
@@ -910,7 +915,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_03_sub}
 
 Moodle:
 \begin{enumerate}
@@ -924,7 +929,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_03_qz}
 
 \begin{enumerate}
 \item
@@ -1009,9 +1014,9 @@ When does the Moon have the largest angular size?
 
 
 \newpage
-\subsection{Lab 4: Phases of the Moon}
+\subsection{Lab 4: Phases of the Moon}\label{sec:lab_04}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_04_over}
 
 Topics covered:
 \begin{itemize}
@@ -1027,11 +1032,11 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_04_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
+\item Lab worksheets: \hyperref[apx:lab_04_ws]{Appendix 4.1}
 \item Golf balls (box)
 \item Lightbulbs on stands ($\times 11$)
 \item Tape measure
@@ -1045,7 +1050,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_04_scrip}
 
 \renewcommand\slidepath[1]{ppt/lab04/Slide#1.jpeg}
 
@@ -1109,7 +1114,7 @@ Complete the Lab quiz on Moodle.
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_04_sub}
 
 Moodle:
 \begin{enumerate}
@@ -1123,7 +1128,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_04_qz}
 
 \begin{enumerate}
 \item
@@ -1203,9 +1208,9 @@ When the Moon is gibbous, what phase would the Earth be in as seen from the Moon
 
 
 \newpage
-\subsection{Lab 5: Motions of the Sun}
+\subsection{Lab 5: Motions of the Sun}\label{sec:lab_05}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_05_over}
 
 Topics covered:
 \begin{itemize}
@@ -1220,11 +1225,11 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_05_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
+\item Lab worksheets: \hyperref[apx:lab_05_ws]{Appendix 5.1}
 \end{itemize}
 
 \noindent
@@ -1234,7 +1239,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_05_scrip}
 
 \renewcommand\slidepath[1]{ppt/lab05/Slide#1.jpeg}
 
@@ -1324,7 +1329,7 @@ Complete the Lab quiz on Moodle.
 % the flow of this is so bad. need to smoothen flow. make each step have as little stellarium overhead as possible.
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_05_sub}
 
 Moodle:
 \begin{enumerate}
@@ -1338,7 +1343,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_05_qz}
 
 \begin{enumerate}
 \item
@@ -1423,9 +1428,9 @@ What month does the Sun appear highest in the sky at noon in Sydney, Australia (
 
 
 \newpage
-\subsection{Lab 6: Solar Power}
+\subsection{Lab 6: Solar Power}\label{sec:lab_06}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_06_over}
 
 Topics covered:
 \begin{itemize}
@@ -1441,12 +1446,12 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_06_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
-\item Table worksheets ($\times 11$)
+\item Lab worksheets: \hyperref[apx:lab_06_ws]{Appendix 6.1}
+\item Table worksheets ($\times 11$): \hyperref[apx:lab_06_tb]{Appendix 6.2}
 \item Metre rules ($\times 11$)
 \item Protractors ($\times 11$)
 \item Flashlights ($\times 11$)
@@ -1459,7 +1464,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_06_scrip}
 \renewcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
 %\renewcommand\slidepath[1]{ppt/lab06/Slide#1.jpeg}
 
@@ -1500,7 +1505,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_06_sub}
 
 Moodle:
 \begin{enumerate}
@@ -1514,7 +1519,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_06_qz}
 
 \begin{enumerate}
 \item
@@ -1576,9 +1581,9 @@ List the values (last column in tables) your group measured at:
 
 
 \newpage
-\subsection{Lab 7: Calendars, Horoscopes, and Precession}% a.k.a. the fuck astrology lab}
+\subsection{Lab 7: Calendars, Horoscopes, and Precession}\label{sec:lab_07}% a.k.a. the fuck astrology lab}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_07_over}
 
 Topics covered:
 \begin{itemize}
@@ -1595,11 +1600,11 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_07_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
+\item Lab worksheets: \hyperref[apx:lab_07_ws]{Appendix 7.1}
 \end{itemize}
 
 \noindent
@@ -1609,7 +1614,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_07_scrip}
 
 %\renewcommand\slidepath[1]{ppt/lab07/Slide#1.jpeg}
 
@@ -1650,7 +1655,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_07_sub}
 
 Moodle:
 \begin{enumerate}
@@ -1664,7 +1669,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_07_qz}
 
 \begin{enumerate}
 \item
@@ -1721,9 +1726,9 @@ How many lunar months are there between Chinese New Years?
 
 
 \newpage
-\subsection{Lab 8: Motions of the Planets in the Sky}
+\subsection{Lab 8: Motions of the Planets in the Sky}\label{sec:lab_08}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_08_over}
 
 Topics covered:
 \begin{itemize}
@@ -1739,11 +1744,11 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_08_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
+\item Lab worksheets: \hyperref[apx:lab_08_ws]{Appendix 8.1}
 \end{itemize}
 
 \noindent
@@ -1753,7 +1758,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_08_scrip}
 
 %\renewcommand\slidepath[1]{ppt/lab08/Slide#1.jpeg}
 
@@ -1794,7 +1799,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_08_sub}
 
 Moodle:
 \begin{enumerate}
@@ -1808,7 +1813,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_08_qz}
 
 \begin{enumerate}
 \item
@@ -1832,9 +1837,9 @@ Which planets undergo retrograde (backward) motion on the sky?
 
 
 \newpage
-\subsection{Lab 9: The HR Diagram}
+\subsection{Lab 9: The HR Diagram}\label{sec:lab_09}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_09_over}
 
 Topics covered:
 \begin{itemize}
@@ -1850,12 +1855,12 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_09_mat}
 
 Instructors:
 \begin{itemize}
-  \item Lab worksheets
-  \item Table worksheets ($\times 11$)
+  \item Lab worksheets: \hyperref[apx:lab_09_ws]{Appendix 9.1}
+  \item Table worksheets ($\times 11$): \hyperref[apx:lab_09_tb]{Appendix 9.1}
 \end{itemize}
 
 \noindent
@@ -1865,7 +1870,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_09_scrip}
 
 %\renewcommand\slidepath[1]{ppt/lab09/Slide#1.jpeg}
 
@@ -1906,7 +1911,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_09_sub}
 
 Moodle:
 \begin{enumerate}
@@ -1920,7 +1925,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_09_qz}
 
 \begin{enumerate}
 \item
@@ -1982,9 +1987,9 @@ Which of the following would you need to know to find a star's surface temperatu
 
 
 \newpage
-\subsection{Lab 10: Distances of Stars in Space}
+\subsection{Lab 10: Distances of Stars in Space}\label{sec:lab_10}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_10_over}
 
 Topics covered:
 \begin{itemize}
@@ -2000,12 +2005,12 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_10_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
-\item Table worksheets ($\times 11$)
+\item Lab worksheets: \hyperref[apx:lab_10_ws]{Appendix 10.1}
+\item Table worksheets ($\times 11$): \hyperref[apx:lab_10_tb]{Appendix 10.2}
 \item Tribbles (in box)
 \item Clips (in box)
 \item Metal poles with sightlines ($\times 11$)
@@ -2018,7 +2023,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_10_scrip}
 
 %\renewcommand\slidepath[1]{ppt/lab10/Slide#1.jpeg}
 
@@ -2059,7 +2064,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_10_sub}
 
 Moodle:
 \begin{enumerate}
@@ -2073,7 +2078,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_10_qz}
 
 \begin{enumerate}
 \item
@@ -2145,9 +2150,10 @@ If you lived on Mars, how would the parallax of stars differ from its value seen
 
 
 \newpage
-\subsection{Lab 11: Structure of the Local Group}
+\subsection{Lab 11: Structure of the Local Group}\label{sec:lab_11}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:lab_11_over}
+
 
 Topics covered:
 \begin{itemize}
@@ -2162,11 +2168,11 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:lab_11_mat}
 
 Instructors:
 \begin{itemize}
-\item Lab worksheets
+\item Lab worksheets: \hyperref[apx:lab_11_ws]{Appendix 11.1}
 \item Colour paper (green, yellow, blue)
 \item Scissors (multiple)
 \item Galaxy info strips
@@ -2181,7 +2187,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:lab_11_scrip}
 
 %\renewcommand\slidepath[1]{ppt/lab11/Slide#1.jpeg}
 
@@ -2222,7 +2228,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:lab_11_sub}
 
 Moodle:
 \begin{enumerate}
@@ -2237,7 +2243,7 @@ In-class:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:lab_11_qz}
 
 \begin{enumerate}
 \item
@@ -2284,9 +2290,9 @@ Which of the following best describes the Milky Way galaxy as compared to the ot
 
 
 \newpage
-\subsection{Project: Movement of the Sunset}
+\subsection{Project: Movement of the Sunset}\label{sec:proj}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:proj_over}
 
 Topics covered:
 \begin{itemize}
@@ -2300,7 +2306,7 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:proj_mat}
 
 Instructors:
 \begin{itemize}
@@ -2314,7 +2320,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:proj_scrip}
 
 %\renewcommand\slidepath[1]{ppt/proj/Slide#1.jpeg}
 
@@ -2355,7 +2361,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Photo Policy Acknowledgement}
+\subsubsection{Photo Policy Acknowledgement}\label{sec:proj_pol}
 
 You will need to take several photos of the setting Sun over the course of the semester following specific directions. Taking these photos is not difficult, but it does require some advance planning. Picture requirements will be described in lab and on Moodle, but a cell phone camera is fine.
 
@@ -2367,7 +2373,7 @@ If you have any special circumstances that will not allow you to take sunset pho
 
 Please indicate that you understand these policies by typing "Y" or "yes":
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:proj_sub}
 
 Moodle:
 \begin{enumerate}
@@ -2379,7 +2385,7 @@ Moodle:
 \end{enumerate}
 
 
-\subsubsection {Quiz}
+\subsubsection{Quiz}\label{sec:proj_qz}
 
 \begin{enumerate}
 \item
@@ -2429,9 +2435,9 @@ The picture can be one of your sunset(/sunrise) pictures or a new picture, and i
 
 
 \newpage
-\subsection{Extra Credit Project: Photo of the Moon in the Daytime a.k.a. The Curious Incident of the Moon in the Day-time}
+\subsection{Extra Credit Project: Photo of the Moon in the Daytime a.k.a. The Curious Incident of the Moon in the Day-time}\label{sec:exproj}
 
-\subsubsection{Overview}
+\subsubsection{Overview}\label{sec:exproj_over}
 
 Topics covered:
 \begin{itemize}
@@ -2445,7 +2451,7 @@ Watch out for:
 \end{itemize}
 
 
-\subsubsection{Materials needed}
+\subsubsection{Materials needed}\label{sec:exproj_mat}
 
 Instructors:
 \begin{itemize}
@@ -2461,7 +2467,7 @@ Students:
 \end{itemize}
 
 
-\subsubsection{Script}
+\subsubsection{Script}\label{sec:exproj_scrip}
 
 %\renewcommand\slidepath[1]{ppt/proj_moon/Slide#1.jpeg}
 
@@ -2502,7 +2508,7 @@ Remember to complete the pre-lab survey. & \includegraphics[width=0.5\textwidth]
 \end{longtable}
 
 
-\subsubsection{Submissions}
+\subsubsection{Submissions}\label{sec:exproj_sub}
 
 Moodle:
 \begin{enumerate}
@@ -2517,7 +2523,7 @@ Moodle:
 \end{enumerate}
 
 
-\subsubsection{Quiz}
+\subsubsection{Quiz}\label{sec:exproj_qz}
 \begin{enumerate}
 \item
 Specifics of photos
@@ -2561,101 +2567,106 @@ In the essay box below:
 %\section{sarah's thoughts}
 
 
-\section{Past schedules and notes}
+\section{Past schedules and notes}\label{sec:past}
 
 
-\subsection{Fall 2020}
+\subsection{Fall 2020}\label{sec:past_f20}
 
 
-\subsection{Spring 2021}
+\subsection{Spring 2021}\label{sec:past_s21}
 
 
-\subsection{Fall 2021}
+\subsection{Fall 2021}\label{sec:past_f21}
 
 
-\subsection{Spring 2022}
+\subsection{Spring 2022}\label{sec:past_s22}
+
+
+%\newpage
+\section{Acknowledgements}\label{ack}
 
 
 \newpage
-\section{Materials}
 
+\begin{appendices}
 
-\subsection{General}
+N.B.: The worksheets here are for reference only and are \textbf{not} print-ready. To get print-ready worksheets, reference Section 0: How to use this manual, and use the worksheet master document \texttt{ws.tex}.
 
+\renewcommand{\thesection}{\arabic{section}}
+\setcounter{section}{-1}
 
-\subsubsection{Syllabus}
+\section{General}\label{apx:gen}
 
+\subsection{Syllabus}\label{apx:gen_syl}
 
 %\newpage
-\subsubsection{Stellarium Guide}
-%\subfile{stellarium guide.tex}
+\subsection{Stellarium Guide}\label{apx:gen_stel}
+\subfile{stelguide.tex}
 
 %\newpage
-\subsection{Lab 1: Astronomical Angles and Stellarium}
-\subsubsection{Worksheet}
+\section{Lab 1: Astronomical Angles and Stellarium}\label{apx:lab_01}
+\subsection{Worksheet}\label{apx:lab_01_ws}
 \subfile{ws01.tex}
 
 %\newpage
-\subsection{Lab 2: Angular Sizes on the Sky}
-\subsubsection{Worksheet}
+\subsection{Lab 2: Angular Sizes on the Sky}\label{apx:lab_02}
+\subsubsection{Worksheet}\label{apx:lab_02_ws}
 %\subfile{ws02.tex}
 
 %\newpage
-\subsection{Lab 3: Angular Size vs. Distance}
-\subsubsection{Worksheet}
+\section{Lab 3: Angular Size vs. Distance}\label{apx:lab_03}
+\subsection{Worksheet}\label{apx:lab_03_ws}
 \subfile{ws03.tex}
 
 %\newpage
-\subsection{Lab 4: Phases of the Moon}
-\subsubsection{Worksheet}
+\section{Lab 4: Phases of the Moon}\label{apx:lab_04}
+\subsection{Worksheet}\label{apx:lab_04_ws}
 \subfile{ws04.tex}
 
 %\newpage
-\subsection{Lab 5: Motions of the Sun}
-\subsubsection{Worksheet}
+\section{Lab 5: Motions of the Sun}\label{apx:lab_05}
+\subsection{Worksheet}\label{apx:lab_05_ws}
 \subfile{ws05.tex}
 
 %\newpage
-\subsection{Lab 6: Solar Power}
-\subsubsection{Worksheet}
+\section{Lab 6: Solar Power}\label{apx:lab_06}
+\subsection{Worksheet}\label{apx:lab_06_ws}
 \subfile{ws06.tex}
 
 %\newpage
-\subsubsection{Table worksheet}
+\subsection{Table worksheet}\label{apx:lab_06_tb}
 
 %\newpage
-\subsection{Lab 7: Calendars, Horoscopes, and Precession}
-\subsubsection{Worksheet}
+\section{Lab 7: Calendars, Horoscopes, and Precession}\label{apx:lab_07}
+\subsection{Worksheet}\label{apx:lab_07_ws}
 %\subfile{ws07.tex}
 
 %\newpage
-\subsection{Lab 8: Motions of the Planets in the Sky}
-\subsubsection{Worksheet}
+\section{Lab 8: Motions of the Planets in the Sky}\label{apx:lab_08}
+\subsection{Worksheet}\label{apx:lab_08_ws}
 %\subfile{ws08.tex}
 
 %\newpage
-\subsection{Lab 9: The HR Diagram}
-\subsubsection{Worksheet}
+\section{Lab 9: The HR Diagram}\label{apx:lab_09}
+\subsection{Worksheet}\label{apx:lab_09_ws}
 \subfile{ws09.tex}
 
 %\newpage
-\subsubsection{Table worksheet}
+\subsection{Table worksheet}\label{apx:lab_09_tb}
 
 %\newpage
-\subsection{Lab 10: Distances of Stars in Space}
-\subsubsection{Worksheet}
+\section{Lab 10: Distances of Stars in Space}\label{apx:lab_10}
+\subsection{Worksheet}\label{apx:lab_10_ws}
 \subfile{ws10.tex}
 
 %\newpage
-\subsubsection{Table worksheet}
+\subsection{Table worksheet}\label{apx:lab_10_tb}
 
 %\newpage
-\subsection{Lab 11: Structure of the Local Group}
-\subsubsection{Worksheet}
+\section{Lab 11: Structure of the Local Group}\label{apx:lab_11}
+\subsection{Worksheet}\label{apx:lab_11_ws}
 %\subfile{ws08.tex}
 
-%\newpage
-\section{Acknowledgements}
-
+\end{appendices}
 
 \end{document}
