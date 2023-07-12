@@ -28,14 +28,14 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning,calc}
 \usepackage{pgfplots}
-
+\usepackage{rotating}
+\usepackage{adjustbox}
+%\usepackage{pdfpages}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 %\fancyfoot[LE,RO]{\thepage}
-
 \usepackage[page]{appendix}
 \renewcommand{\appendixpagename}{Appendix: Worksheets}
-
 \setcounter{section}{-1}
 
 \title{The Great Big Astro Lab Manual}
@@ -1662,9 +1662,10 @@ List the values (last column in tables) your group measured at:
 Topics covered:
 \begin{itemize}
 \item Movement of the Sun and Moon through the zodiac
-\item Understanding lunisolar calendars
 \item What's your sign?
 \item Precession and the pole star
+\item The motion of Mars
+\item How retrograde motion varies among the planets
 \end{itemize}
 
 \noindent
@@ -1868,9 +1869,7 @@ How many lunar months are there between Chinese New Years?
 
 Topics covered:
 \begin{itemize}
-\item Morning and evening stars
-\item The motion of Mars
-\item How retrograde motion varies among the planets
+\item Solar power at distance and altitude
 \end{itemize}
 
 \noindent
@@ -1895,54 +1894,108 @@ Students:
 
 
 \subsubsection{Script}\label{sec:lab_08_scrip}
-\renewcommand\slidepath[1]{ppt/lab01/Slide#1.jpeg}
-%\renewcommand\slidepath[1]{ppt/lab08/Slide#1.jpeg}
+\renewcommand\slidepath[1]{ppt/lab08/Slide#1.jpeg}
 
 \emph{Before the end of class, set the Moodle Lab Quiz access password.}
 
 \begin{longtable}{|m{0.45\textwidth}|m{0.5\textwidth}|}\hline
-Pick up copies of lab worksheet, syllabus, and Stellarium guide.
+Pick up copies of the lab worksheet.
 & \includegraphics[width=0.5\textwidth]{\slidepath{1}}\\\hline
-Log in to Moodle, go to the Astronomy 100/101 Lab page, and fill out the Astronomy Background Survey. (The survey is graded on participation only.)
+Remember how the Earth's axis is tilted? This means that the Sun doesn't actually pass overhead for most of the world - not at noon or any other time!
 & \includegraphics[width=0.5\textwidth]{\slidepath{3}}\\\hline
-Astronomy Lab grade makes up 25\% of the Astronomy 100/101 total grade.
-
-\textbf{Submitting work or pictures that are not your own, or having someone else do it for you, is dishonest and will be dealt with harshly.}
-
-Lab usually improves your overall grade, if you put in the small time and effort commitment needed.
-& \includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
-If you miss a lab, look out for at-home makeups or scheduled makeup labs, and try to let us know ASAP.
-
-Don't procrastinate on the project; it's not difficult, but is impossible if left to the last minute. 
+Instant altimeter - just add sun
+\begin{enumerate}
+\item Download and print the solar altimeter from Moodle. Try to use heavy paper if possible.
+\item Cut out and fold according to instructions. Try to make everything as square as possible.
+\item Set up your altimeter outside at:
+	\begin{enumerate}
+	\item noon (1pm for daylight savings)
+	\item some time two hours from noon.
+	\end{enumerate}
+\item Orient your altimeter so the left flap casts a shadow across the altimeter.
+\end{enumerate}
+& \includegraphics[width=0.5\textwidth]{\slidepath{4}}
+\includegraphics[width=0.5\textwidth]{\slidepath{5}}\\\hline
+Instant photometer - just add sun
+\begin{enumerate}
+\item Read off the Sun's altitude.
+\item Take a second piece of paper/card and crease it in the middle.
+\item Put it on the ground so one side is flat.
+\item Prop up the other side so it is directly facing the sun. Is one side brighter than the other?
+\item Take a picture of your altimeter and photometer.
+\end{enumerate}
+& \includegraphics[width=0.5\textwidth]{\slidepath{6}}\\\hline
+If you can't print:
+\begin{enumerate}
+\item Use any piece of paper and fold it like the altimeter (straight flaps on bottom and side).
+\item Mark the side of the shadow and measure it with a protractor.
+\end{enumerate}
+We'll give extra credit for creative solutions to measuring the Sun's altitude!
 & \includegraphics[width=0.5\textwidth]{\slidepath{7}}\\\hline
-Stellarium is a planetarium software that simulates what the sky looks like at different locations and times. 
+Find the azimuth and altitude of the Sun as given on Stellarium for the same location, date, and time as your altimeter readings. Do they agree with your measurements?
 & \includegraphics[width=0.5\textwidth]{\slidepath{8}}\\\hline
-If you're using a lab computer, Stellarium is already installed and you can just pull it up. If you're using your own computer, download the correct installer from this website and install it. If your OS isn't available, you can use the web version. Open the Location Window from the left-hand menu panel or by pressing F6. In the search bar under the top right menu, type ``Amherst" and select ``Amherst Center, United States".
+I need your light
 
-Take note that it's ``Amherst Center", not ``Amherst" (that's in NY somewhere). Also, \textbf{do not type} into the ``Name/City" box. That renames the location.
-
-Close the window and open the Date/Time Window from the left-hand menu panel or by pressing F5. Set the time to 7:00pm tonight to see what will be visible.
-
-Practice dragging the view with the cursor to view different directions. Note that to zoom in, you scroll \textbf{up}, and to zoom out, you scroll \textbf{down}. 
+The angle the Sun shines at affects how much heat it provides. This is proportional to sin(alt).
 & \includegraphics[width=0.5\textwidth]{\slidepath{9}}\\\hline
-In astronomy, we use angles to measure positions and separations of objects in the sky. Your position is measured by latitude and longitude. (These are angles measured with the vertex at the centre of the Earth. Where is the angle of your position measured relative to?) 
+I need your light
+\begin{enumerate}
+\item Calculate sine of the following values:
+	\begin{enumerate}
+	\item 90 (This should be 1. If it is not, make sure you are using degrees!)
+	\item Sun altitude at noon (beware daylight savings!)
+	\item Sun altitude at two hours from noon
+	\end{enumerate}
+\item In Stellarium, find out the Sun's altitude at noon on:
+	\begin{enumerate}
+	\item the summer solstice (21 Jun)
+	\item the winter solstice (21 Dec)
+	\end{enumerate}
+\item Calculate the sine of those two values.
+\item Find the ratio between those two values.
+\end{enumerate}
 & \includegraphics[width=0.5\textwidth]{\slidepath{10}}\\\hline
-From your point of view, an object's position is given by \textbf{azimuth} and \textbf{altitude}. Similar to before, we take the vertex of the angle measurement to be your position. For altitude, the angle is measured relative to the horizon. For azimuth, the angle is measured relative to due north. 
+Near, far, wherever you are
+
+Magnitude is a measure of how bright something is. The brighter it is, the LOWER the magnitude.
+
+Power is related to magnitude per the formula:
+\begin{equation*}
+P \approx 3 \times 10^{-8} \times 10^{-\frac{m}{2.5}}\ \si{\watt}/\si{\metre^2}
+\end{equation*}
+We'll talk about it in more detail in Lab ~\ref{sec:lab_09}.
 & \includegraphics[width=0.5\textwidth]{\slidepath{11}}\\\hline
-To compare astronomical positions independent of observer location, we use the celestial coordinate system. It's very similar to latitude and longitude, which correcpond to declination and right ascension respectively. 
+I'm dreaming of a bright Christmas
+\begin{enumerate}
+\item Open Stellarium and select the Sun.
+\item Open the Date and Time window in Stellarium.
+\item Find the Sun's maximum and minimum magnitudes over the next year (Oct 2020 to Oct 2021).
+\item Find the corresponding power for those two values.
+\item Find the ratio of the power.
+\end{enumerate}
 & \includegraphics[width=0.5\textwidth]{\slidepath{12}}\\\hline
-Astronomers use the \textbf{sexagesimal} system for recording angles. Each degree is divided into 60 \textbf{arc minutes} (\si{\arcminute}), and each arc minute is divided into 60 \textbf{arc seconds} (\si{\arcsecond}).
-
-Right ascension also measures angle, but it is measured like how we measure time, in hours-minutes-seconds. In right ascension, there are 24 hours in a circle of 360 \si{\degree}. 
+Near, far, wherever you are (cont.)
+\begin{enumerate}
+\item Open the Location window in Stellarium.
+\item Choose Mars in the menu.
+\item As before, open the Date and Time window and find the Sun's maximum and minimum magnitudes over the next year.
+\item Find the corresponding power for those two values.
+\item Find the ratio of the power.
+\end{enumerate}
 & \includegraphics[width=0.5\textwidth]{\slidepath{13}}\\\hline
-Fill out your worksheet. 
+Going the distance
+\begin{enumerate}
+\item Repeat the same steps from another planet: Jupiter, Saturn, Uranus, Neptune, Ceres, Pluto, Eris, Haumea, or Makemake. N.B.: Eris, Haumea, and Makemake are listed with a numerical prefix starting with 136.
+
+Make sure you cover a full orbital period for the planet - this may be longer than an Earth year.
+\item In your write-up on Moodle, answer the following questions:
+	\begin{enumerate}
+	\item Find the brightest and faintest magnitudes of the Sun and convert these to Watts/\si{\metre^2}.
+	\item Find the ratio of the Sun's dimmest brightness there to the dimmest value on Earth, and convert that to an altitude (as you did for Mars).
+	\item What latitude on Earth would have the Sun at this altitude at noon on the winter solstice?
+	\end{enumerate}
+\end{enumerate}
 & \includegraphics[width=0.5\textwidth]{\slidepath{14}}\\\hline
-%\emph{At ~10 min from class end, show Moodle quiz password.} 
-
-%Complete the Lab quiz on Moodle.
-
-Remember to complete the pre-lab survey. 
-& \includegraphics[width=0.5\textwidth]{ppt/lab01/Slide15.jpeg}\\\hline
 %\label{default}
 \end{longtable}
 
@@ -1952,6 +2005,12 @@ Remember to complete the pre-lab survey.
 Moodle:
 \begin{enumerate}
 \item Lab quiz
+\item Photos of measurement
+	\begin{itemize}
+	\item At noon
+	\item 2h from noon
+	\end{itemize}
+\item Extra credit writeup
 \end{enumerate}
 
 \noindent
@@ -2019,7 +2078,6 @@ Students:
 
 
 \subsubsection{Script}\label{sec:lab_09_scrip}
-
 \renewcommand\slidepath[1]{ppt/lab09/Slide#1.jpeg}
 
 \emph{Before the end of class, set the Moodle Lab Quiz access password.}
@@ -2644,7 +2702,7 @@ If you are unable to get good sunset pictures, make sure to upload your attempts
 Annotated photo
 \begin{enumerate}
 \item Take one of your photos and mark on it the positions of the sunsets from your other photos.
-\item Based on the angular scale of your camera (from calibrating it in Lab 2), predict where the sunset shift to on 21 Jun/Dec.
+\item Based on the angular scale of your camera (from calibrating it in Lab 2), predict where the sunset will shift to on 21 Jun/Dec.
 
 You can make use of your calibration grid pictures.
 \end{enumerate}
@@ -2893,83 +2951,93 @@ N.B.: The worksheets here are for reference only and are \textbf{not} print-read
 
 \section{General}\label{apx:gen}
 
+%\newpage
 \subsection{Syllabus}\label{apx:gen_syl}
 
-%\newpage
+\newpage
 \subsection{Stellarium Guide}\label{apx:gen_stel}
 \subfile{stelguide.tex}
 
-%\newpage
+\newpage
 \section{Lab 1: Astronomical Angles and Stellarium}\label{apx:lab_01}
 \subsection{Worksheet}\label{apx:lab_01_ws}
 \subfile{ws01.tex}
 
-%\newpage
+\newpage
 \section{Lab 2: Angular Sizes on the Sky}\label{apx:lab_02}
 \subsection{Worksheet}\label{apx:lab_02_ws}
 \subfile{ws02.tex}
 
-%\newpage
+\newpage
 \section{Lab 3: Angular Size vs. Distance}\label{apx:lab_03}
 \subsection{Worksheet}\label{apx:lab_03_ws}
 \subfile{ws03.tex}
 
-%\newpage
+\newpage
+\subsection{Table worksheet}\label{apx:lab_03_tb}
+\subfile{ws03t.tex}
+
+\newpage
 \section{Lab 4: Phases of the Moon}\label{apx:lab_04}
 \subsection{Worksheet}\label{apx:lab_04_ws}
 \subfile{ws04.tex}
 
-%\newpage
+\newpage
 \section{Lab 5: Motions of the Sun}\label{apx:lab_05}
 \subsection{Worksheet}\label{apx:lab_05_ws}
 \subfile{ws05.tex}
 
-%\newpage
+\newpage
 \section{Lab 6: Solar Power}\label{apx:lab_06}
 \subsection{Worksheet}\label{apx:lab_06_ws}
 \subfile{ws06.tex}
 
-%\newpage
+\newpage
 \subsection{Table worksheet}\label{apx:lab_06_tb}
+\subfile{ws06t.tex}
 
-%\newpage
+\newpage
 \section{Lab 7: Calendars, Horoscopes, and Precession}\label{apx:lab_07}
 \subsection{Worksheet}\label{apx:lab_07_ws}
-%\subfile{ws07.tex}
+\subfile{ws07.tex}
 
-%\newpage
+\newpage
 \section{Lab 8: Motions of the Planets in the Sky}\label{apx:lab_08}
 \subsection{Worksheet}\label{apx:lab_08_ws}
-%\subfile{ws08.tex}
+\subfile{ws08.tex}
 
-%\newpage
+\newpage
 \section{Lab 9: The HR Diagram}\label{apx:lab_09}
 \subsection{Worksheet}\label{apx:lab_09_ws}
 \subfile{ws09.tex}
 
-%\newpage
+\newpage
 \subsection{Table worksheet}\label{apx:lab_09_tb}
+\subfile{ws09t.tex}
 
-%\newpage
+\newpage
 \section{Lab 10: Distances of Stars in Space}\label{apx:lab_10}
 \subsection{Worksheet}\label{apx:lab_10_ws}
 \subfile{ws10.tex}
 
-%\newpage
+\newpage
 \subsection{Table worksheet}\label{apx:lab_10_tb}
+\subfile{ws10t.tex}
 
-%\newpage
+\newpage
 \section{Lab 11: Structure of the Local Group}\label{apx:lab_11}
 \subsection{Worksheet}\label{apx:lab_11_ws}
 \subfile{ws11.tex}
 
+\newpage
 \section{Project: Movement of the Sunset}\label{apx:pro_1}
 \subsection{Worksheet}\label{apx:pro_1_ws}
-%\subfile{wsp1.tex}
+\subfile{wsp1.tex}
 
+\newpage
 \section{Project: Moon in daytime}\label{apx:pro_2}
 \subsection{Worksheet}\label{apx:pro_2_ws}
-%\subfile{wsp2.tex}
+\subfile{wsp2.tex}
 
 \end{appendices}
 
